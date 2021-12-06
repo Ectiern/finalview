@@ -147,7 +147,11 @@ h1{
   color: white;
 
   }
-
+.recipecontainer h2{
+  font-size: 1.5em;
+  text-align:center;
+  color: rgb(75,106,136);
+}
 
 
  body{
