@@ -63,6 +63,27 @@ a.skip-main:focus, a.skip-main:active {
   color: white;
   font-size: 30px;
  }
+
+
+ .circle {
+  height: 75px;
+  width: 75px;
+  -webkit-animation: movespin 4s ease-in-out;
+  animation: movespin 4s ease-in-out;
+  color: white;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  }
+  
+  @-webkit-keyframes movespin {
+    0% {
+      transform: translateX(0px) rotate(0deg);
+    }
+    100% {
+      transform: translateX(1000px) rotate(360deg);
+    }
+  }
+ 
  .gallery{
   display: grid;
   grid-gap: 10px;
