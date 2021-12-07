@@ -13,6 +13,15 @@
   text-decoration: none;
   font-size: 22px;
 }
+.parallax {
+  background-image: url(../images/kitchen.jpg);
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
