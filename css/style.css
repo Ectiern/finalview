@@ -177,6 +177,14 @@ h1{
   color: white;
 
   }
+
+.recipestext h2{
+  font-size: 1.5em;
+  text-align:center;
+  line-height: 2;
+  color: white;
+  
+}
 .recipecontainer h2{
   font-size: 1.5em;
   text-align:center;
@@ -227,7 +235,19 @@ h1{
   border: 5px solid white;
   background: rgb(52,73,94);
 }
-
+.recipestext{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 55px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 5px solid white;
+  background: rgb(52,73,94);
+}
 
 .aboutmecontainer2 {
   display: flex;
@@ -246,17 +266,8 @@ h1{
 }
   /*Recipes Start*/ 
 
-  .recipecontainer{
 
-    color: rgb(75,106,136);
-    display: grid;
-    grid-row-gap: .5em;
-    grid-column-gap: .5em;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    margin-top: .5em;
-    
-  }
+
 
  
   ul {
@@ -271,44 +282,27 @@ h1{
   
 
 
-
-  .recipe{
-    justify-content: left;
-
-  }
-  .recipecontainer img{
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    width: 12em;
-    justify-content: center;
   
-   }
-   .salmonrecipe {
-    display: grid;
-    background-color: white;
-    border: 10px solid rgb(75,106,136);
-    padding: 20px;
-  }
-  .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h2{
-    display: block;
+  .recipecontainer h2{
     text-align: center;
-    color: rgb(230,87,84);
+    color: rgb(75,106,136);
     line-height: 1.2;
+    padding: 1%;
   }
-  .salmonrecipe .chickenrecipe .eggrecipe .shrimprecipe h3{
+  .recipecontainer h3{
     text-align: left;
-    color: rgb(230,87,84);
+    color: rgb(75,106,136);
+    padding: 1%;
   }
-  .salmonrecipe, .chickenrecipe, .eggrecipe, .shrimprecipe, h4{
+  .recipecontainer h4{
     text-align: left;
     color: #000000;
+    padding: 1%;
   }
-  .chickenrecipe{
-    display: grid;
-    background-color: white;
-    border: 10px solid rgb(75,106,136);
-    padding: 20px;
+ 
+  .one p, .two p, .three p, .four p{
+    padding: 1%;
+    display: block;
   }
 
   .eggrecipe{
@@ -318,6 +312,28 @@ h1{
     padding: 20px;
   }
 
+  .one, .two, .three, .four{
+    background-color: white;
+    border: 10px solid rgb(75,106,136);
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .recipes{
+    flex: 25%;
+  }
+  
+  .one img, .two img, .three img, .four img{
+    max-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+    padding: 2%;
+
+  }
 
   .shrimprecipe{
     display: grid;
