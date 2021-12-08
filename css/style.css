@@ -21,6 +21,8 @@ html,body
   color: white;
   text-decoration: none;
   font-size: 22px;
+  display:block; /* new*/
+  float: none; /*new*/
 }
 .parallax {
   background-image: url(../images/kitchen.jpg);
@@ -477,7 +479,7 @@ footer{
 
 /*RECIPES START*/ 
 
-@media screen and (prefers-reduced-motion:reduce) {
+@media screen and (prefers-reduced-motion: reduce) {
   .circle{
     animation: none;
     -webkit-animation: none;
@@ -488,10 +490,10 @@ footer{
 
 }
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 501px) {
   .navbar a {
-    float: none;
-    display: block;
+    /*float: none;*/
+    display: inline-block;
   }
 }
 @media screen and (max-width: 600px) {
