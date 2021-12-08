@@ -266,9 +266,6 @@ h1{
 }
   /*Recipes Start*/ 
 
-
-
-
  
   ul {
     padding-left: .5em;
@@ -278,30 +275,25 @@ h1{
   li {
     line-height: 1;
   }
-
-  
-
-
   
   .recipecontainer h2{
     text-align: center;
     color: rgb(75,106,136);
     line-height: 1.2;
-    padding: 1%;
+
   }
   .recipecontainer h3{
     text-align: left;
     color: rgb(75,106,136);
-    padding: 1%;
+    
   }
   .recipecontainer h4{
     text-align: left;
     color: #000000;
-    padding: 1%;
+
   }
  
   .one p, .two p, .three p, .four p{
-    padding: 1%;
     display: block;
   }
 
@@ -312,27 +304,45 @@ h1{
     padding: 20px;
   }
 
-  .one, .two, .three, .four{
+  /*.one, .two, .three, .four{
     background-color: white;
     border: 10px solid rgb(75,106,136);
     justify-content: center;
     margin-right: 5px;
     margin-left: 5px;
+    width: calc(25% - 20px);
+  }*/
+  .one, .two, .three, .four{
+    height: 550px;
+    flex-basis: 100%;
+    -ms-flex: auto;
+    width: 259px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: white;
+    border: 10px solid rgb(75,106,136);
+    justify-content: center;
+    padding: 5px;
   }
 
   .recipes{
-    flex: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }  
+
+  .recipecontainer {
+    max-width: 1335px;
+    margin: 0 auto;
   }
   
-  .one img, .two img, .three img, .four img{
-    max-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    object-position: 50% 50%;
-    padding: 2%;
+    
 
+  .one img, .two img, .three img, .four img{
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    padding:5px;
   }
 
   .shrimprecipe{
@@ -438,18 +448,22 @@ footer{
     margin-top: 20px;
    }
 
-   .advice{
+   .advice {
     color: white;
     background-color: rgb(75,106,136) ;
     text-align: left;
     padding-left: 35px;
     margin: 20px;
     border: 2px white solid;
+    perspective: 1000px;
    }
     .advice h2{
       margin-bottom: 5px;
       margin-top: 15px;
     }
+
+  
+
 /*Advice End*/ 
 
 /*RECIPES START*/ 
@@ -472,4 +486,15 @@ footer{
 
 @media only screen and (min-width: 768px){
 
+}
+
+@media(min-width: 1073px) {
+  .one, .two, .three, .four {
+    flex-basis: 33.33%;
+  }
+}
+@media(min-width: 815px) {
+  .one, .two, .three, .four {
+    flex-basis: 50%;
+  }
 }
