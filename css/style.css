@@ -181,7 +181,7 @@ h1{
   font-size: 2em;
   text-align:center;
   line-height: 2;
-  color: white;
+  color: rgb(52,73,94);
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: bold;
@@ -190,7 +190,7 @@ h1{
   font-size: 1.7em;
   text-align:center;
   line-height: 2;
-  color: white;
+  color: rgb(75,106,136);
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: bold;
@@ -238,13 +238,13 @@ h1{
    margin-bottom: 30px;
    margin-right: 5px;
    margin-left: 5px;
-   border: 5px solid white;
-   background: rgb(52,73,94);
+   border: 5px solid rgb(52,73,94);
+   background: white;
    font-family: 'Poppins';
    
   }
   .abouttext p{
-    color: white;
+    color: rgb(52,73,94);
     font-family: 'Poppins';
   }
 .gallerytext {
@@ -257,8 +257,8 @@ h1{
   margin-bottom: 15px;
   margin-right: 5px;
   margin-left: 5px;
-  border: 5px solid white;
-  background: rgb(52,73,94);
+  border: 5px solid rgb(52,73,94);
+  background: white;
   font-family: 'Poppins';
 }
 .recipestext{
@@ -289,7 +289,7 @@ h1{
   }
 
 .gallerytext p{
-  color: white;
+  color: black;
   font-family: 'Poppins';
 }
   /*Recipes Start*/ 
@@ -477,7 +477,7 @@ footer{
 
   #adviceheader h2{
     text-align: center;
-    color: white;
+    color: rgb(75,106,136);
     font-family: 'Poppins', cursive;
     font-size: 30px;
     margin-bottom: 20px;
@@ -486,11 +486,11 @@ footer{
 
    .advice {
     color: white;
-    background-color: rgb(52,73,94) ;
+    background-color: white ;
     text-align: left;
     padding-left: 35px;
     margin: 20px;
-    border: 2px white solid;
+    border: 5px rgb(52,73,94) solid;
     perspective: 1000px;
    }
     .advice h2{
@@ -499,11 +499,14 @@ footer{
       font-family: 'Playfair Display';
       font-style: italic;
       font-weight: bold;
+      color: rgb(75,106,136);
     }
 
     .advice li{
       font-family: 'Poppins';
       font-size: 1.1rem;
+      color: black;
+      padding: 2px;
     }
 
 /*Advice End*/ 
