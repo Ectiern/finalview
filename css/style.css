@@ -1,5 +1,4 @@
-/* Style the navigation bar */
-
+/*HTML AND BODY STYLING START*/
 html,body
 {
     width: 100%;
@@ -8,43 +7,68 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
+.block{
+  display: block;
+  border: 2rem black solid;
+ }
+
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+ body{
+ margin: 0;
+ padding: 0;
+ font-size: 1.4em; /* test for this! Make all sizes em or rem */
+ background-color: rgb(245, 225, 253);
+ }
+
+ p {
+  padding: 0 20px;
+  text-align: justify center;
+  font-size: 1em;
+ }
+ 
+  ul {
+    padding-left: .5em;
+    font-size: 1.5rem;
+  }
+
+  li {
+    line-height: 1;
+  }
+/*HTML AND BODY STYLING END*/
+
+/*NAVBAR STYLING START*/
 .navbar {
   width: 100%;
   background-color: rgb(75,106,136);
   overflow: auto;
 }
 
-/* Navbar links */
 .navbar a {
   text-align: center;
   padding: 12px;
   color: white;
   text-decoration: none;
   font-size: 22px;
-  display:block; /* new*/
-  float: none; /*new*/
-}
-.parallax {
-  background-image: url(../images/kitchen.jpg);
-  min-height: 400px;
-  margin: 5px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
+  display:block; 
+  float: none; 
 }
 
-/* Navbar links on mouse-over */
 .navbar a:hover {
   background-color: #000000;
 }
 
-/* Current/active navbar link */
 .active {
   background-color: rgb(83,47,97);
 }
+/*NAVBAR STYLING END*/
 
+/*SKIP TO MAIN CONTENT STYLING START*/
 a.skip-main {
   right:-999px;
   position:absolute;
@@ -68,7 +92,9 @@ a.skip-main:focus, a.skip-main:active {
     font-size:1.2em;
     z-index:999;
 }
+/*SKIP TO MAIN CONTENT STYLING END*/
 
+/*HEADER STYLING START*/
  header{
   display: block;
   position: relative;
@@ -86,7 +112,10 @@ a.skip-main:focus, a.skip-main:active {
   background-color: rgb(179,129,179);
  }
 
+/*HEADER STYLING END*/
 
+
+/*INDEX PAGE STYLING START*/
  .circle {
   height: 75px;
   width: 75px;
@@ -105,98 +134,140 @@ a.skip-main:focus, a.skip-main:active {
       transform: translateX(1000px) rotate(360deg);
     }
   }
+  .abouttext{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 5px solid rgb(52,73,94);
+    background: white;
+    font-family: 'Poppins';
+   }
+
+   .abouttext p{
+     color: rgb(52,73,94);
+     font-family: 'Poppins';
+   }
+
+  .abouttext h2{
+    font-size: 2em;
+    text-align:center;
+    line-height: 2;
+    color: rgb(52,73,94);
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .aboutmecontainer2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    max-height: 30em;
+    }
+  .aboutmecontainer2 img{
+      margin: 2px;
+      max-width: 10em;
+    }
+  /*INDEX PAGE STYLING END*/
+
+  /*GALLERY PAGE STYLING START*/
+
+  .gallerytextcontainer{
+    display: grid;
+  }
+  .gallerytext {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 55px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 5px solid rgb(52,73,94);
+    background: white;
+    font-family: 'Poppins';
+  }
+
+  .gallerytext p{
+    color: rgb(52,73,94);
+    font-family: 'Poppins';
+  }
+  .gallerytext h2{
+    font-size: 1.7em;
+    text-align:center;
+    line-height: 2;
+    color: rgb(75,106,136);
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: bold;
+    }
  
- .gallery{
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
- }
-
-
-.gallery .item {
-  position: relative;
-  overflow: hidden;
-  border-color: white;
-  border-image: none;
-  border-style: solid;
-  border-width: 10px;
-  width: 200px;
-  height: 200px;
-}
-
-
-.gallery-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery .item img {
-  /*vertical-align: middle;*/
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery .caption {
-  margin: 0;
-  padding: 1em;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  max-height: 100%;
-  overflow: auto;
-  box-sizing: border-box;
-  transition: transform .5s;
-  transform: translateY(100%);
-  background: rgba(0, 0, 0, .7);
-  color: rgb(255, 255, 255);
-}
-
-.gallery .item:hover .caption {
-  transform: translateY(0%);
-}
-*{
-  box-sizing: border-box;
-}
-
-.block{
-  display: block;
-  border: 2rem black solid;
- }
-
-.gallerytextcontainer{
-  display: grid;
-  
-}
-h1{
-  font-size: 2em;
-  text-align: center;
-  padding-top: 1em;
-}
-
-.abouttext h2{
-  font-size: 2em;
-  text-align:center;
-  line-height: 2;
-  color: rgb(52,73,94);
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: bold;
-  }
-.gallerytext h2{
-  font-size: 1.7em;
-  text-align:center;
-  line-height: 2;
-  color: rgb(75,106,136);
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: bold;
-
+  .gallery{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
   }
 
+
+  .gallery .item {
+    position: relative;
+    overflow: hidden;
+    border-color: white;
+    border-image: none;
+    border-style: solid;
+    border-width: 10px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .gallery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery .item img {
+    /*vertical-align: middle;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery .caption {
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    transition: transform .5s;
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, .7);
+    color: rgb(255, 255, 255);
+  }
+
+  .gallery .item:hover .caption {
+    transform: translateY(0%);
+  }
+  *{
+    box-sizing: border-box;
+  }
+/*GALLERY PAGE STYLING END*/
+
+/*RECIPES PAGE STYLING START*/
 .recipestext h2{
   font-size: 1.5em;
   text-align:center;
@@ -212,55 +283,6 @@ h1{
   text-align:center;
   color: rgb(75,106,136);
 }
-
-
- body{
- margin: 0;
- padding: 0;
- font-size: 1.4em; /* test for this! Make all sizes em or rem */
- 
- /*background-color: rgb(179,129,179);*/
- background-color: rgb(245, 225, 253);
- }
-
- p {
-  padding: 0 20px;
-  text-align: justify center;
-  font-size: 1em;
- }
- .abouttext{
-   text-align: center;
-   padding-top: 30px;
-   padding-bottom: 30px;
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-top: 30px;
-   margin-bottom: 30px;
-   margin-right: 5px;
-   margin-left: 5px;
-   border: 5px solid rgb(52,73,94);
-   background: white;
-   font-family: 'Poppins';
-   
-  }
-  .abouttext p{
-    color: rgb(52,73,94);
-    font-family: 'Poppins';
-  }
-.gallerytext {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 55px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: 5px;
-  margin-left: 5px;
-  border: 5px solid rgb(52,73,94);
-  background: white;
-  font-family: 'Poppins';
-}
 .recipestext{
   text-align: center;
   padding-top: 15px;
@@ -275,35 +297,6 @@ h1{
   background: white;
   font-family: 'Poppins';
 }
-
-.aboutmecontainer2 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
-  justify-content: space-between;
-  max-height: 30em;
-  }
-.aboutmecontainer2 img{
-    margin: 2px;
-    max-width: 10em;
-  }
-
-.gallerytext p{
-  color: rgb(52,73,94);
-  font-family: 'Poppins';
-}
-  /*Recipes Start*/ 
-
- 
-  ul {
-    padding-left: .5em;
-    font-size: 1.5rem;
-  }
-
-  li {
-    line-height: 1;
-  }
-  
   .recipecontainer h2{
     text-align: center;
     color: rgb(52,73,94);
@@ -319,12 +312,10 @@ h1{
     margin-left: 5px;
     margin: 2px;
     font-family: 'Poppins';
-    
   }
   .recipecontainer h4{
     text-align: left;
     color: #000000;
-
   }
 
   .recipecontainer p{
@@ -342,15 +333,6 @@ h1{
     line-height: 1.2em;
   }
 
-
-  /*.one, .two, .three, .four{
-    background-color: white;
-    border: 10px solid rgb(75,106,136);
-    justify-content: center;
-    margin-right: 5px;
-    margin-left: 5px;
-    width: calc(25% - 20px);
-  }*/
   .one, .two, .three, .four{
     height: 550px;
     flex-basis: 100%;
@@ -366,9 +348,21 @@ h1{
   }
 
   .one>div, .two>div, .three>div, .four>div {
-  
     flex: 1 1 auto;
-}
+  }
+
+  .parallax {
+    background-image: url(../images/kitchen.jpg);
+    min-height: 400px;
+    margin: 5px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display:block; 
+    float: none; 
+  }
 
   .recipes{
     display: flex;
@@ -390,12 +384,10 @@ h1{
     object-fit: cover;
     padding:5px;
   }
+/*RECIPES PAGE STYLING END*/
 
 
-
-/*Recipes End*/ 
-
-/*Advice Start*/ 
+/*ADVICE PAGE STYLING START*/ 
 
 input[type=text], select, textarea{
   width: 100%;
@@ -471,14 +463,6 @@ footer{
 
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
   #adviceheader h2{
     text-align: center;
     color: rgb(75,106,136);
@@ -513,9 +497,9 @@ footer{
       padding: 2px;
     }
 
-/*Advice End*/ 
+/*ADVICE PAGE STYLING END*/ 
 
-/*RECIPES START*/ 
+/*MEDIA QUERIES*/ 
 
 @media screen and (prefers-reduced-motion: reduce) {
   .circle{
@@ -532,10 +516,6 @@ footer{
   .navbar a {
     display: inline-block;
   }
-}
-
-}
-@media screen and (min-width: 481px) {
   .one img, .two img, .three img, .four img{
     height: 30vw;
     
@@ -550,13 +530,11 @@ footer{
     height: 30vw;
     
   }
-  @media screen and (min-width: 1073px) {
-    .one, .two, .three, .four {
-      flex-basis: 32%;
-      
-      justify-content: space-between;
-      margin-bottom: 15px;
-      
+@media screen and (min-width: 1073px) {
+  .one, .two, .three, .four {
+    flex-basis: 32%;
+    justify-content: space-between;
+    margin-bottom: 15px;
     }
     .one, .two{
       margin-right:2px;
@@ -564,6 +542,5 @@ footer{
 
     .one img, .two img, .three img, .four img{
       height: 20vw;
-
     }
   }
