@@ -534,6 +534,7 @@ footer{
   .aboutmecontainer2{
     padding: 5px;
   }
+
 }
 
 @media screen and (min-width: 1073px) {
@@ -552,4 +553,5 @@ footer{
     .aboutmecontainer2{
       padding: 5px;
     }
+    
   }
