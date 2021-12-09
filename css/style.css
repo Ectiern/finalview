@@ -167,7 +167,7 @@ a.skip-main:focus, a.skip-main:active {
   .aboutmecontainer2 {
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 20%;
     justify-content: space-between;
     max-height: 30em;
     }
@@ -517,8 +517,10 @@ footer{
     display: inline-block;
   }
   .one img, .two img, .three img, .four img{
-    height: 30vw;
-    
+    height: 35vw;
+  }
+  .aboutmecontainer2{
+    padding: 5px;
   }
 }
 
@@ -528,8 +530,12 @@ footer{
   }
   .one img, .two img, .three img, .four img{
     height: 30vw;
-    
   }
+  .aboutmecontainer2{
+    padding: 5px;
+  }
+}
+
 @media screen and (min-width: 1073px) {
   .one, .two, .three, .four {
     flex-basis: 32%;
@@ -542,5 +548,8 @@ footer{
 
     .one img, .two img, .three img, .four img{
       height: 20vw;
+    }
+    .aboutmecontainer2{
+      padding: 5px;
     }
   }
